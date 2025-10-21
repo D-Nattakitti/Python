@@ -1,9 +1,18 @@
-for i in range(1, 13):
-    print(i)
+# ******* for loop **********
 
-loopi = 0
-while loopi <= 12:
-    numsum = (loopi + 1) * 7
-    print(numsum)
-    loopi += 1
+# for i in range(1, 13):
+#     num = i * 7
+#     print(f"7 x {i} = {num}")
 
+
+# ******* while loop **********
+
+i = 1
+
+while i <= 12:
+    num = i * 7
+    print(f" 7 x {i} = {num}")
+    i += 1
+
+print(f"จบการทำงาน")
+    
