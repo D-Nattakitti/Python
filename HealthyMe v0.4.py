@@ -18,6 +18,7 @@ def read_health_log(name, weight, height, bmi):
 
 def main():
     print("=== HealthyMe V0.4 ===")
+    print(f"ข้อมูลเก่า: \n{read_health_log(contant)}
     name = input("ชื่อของคุณ: ")
     weight = float(input("น้ำหนัก (kg): "))
     height = float(input("ส่วนสูง (cm): "))
