@@ -2,8 +2,14 @@ def calculate_bmi(weight, height):
     return weight / (height / 100) ** 2
 
 def save_to_file(name, weight, height, bmi):
-    with open("health_log.txt", "a") as file:
-        file.write(f"Name: {name}, Weight: {weight}, Height: {height}, BMI: {bmi:.2f}\n")
+    from datetime import datetime   # ✅ import ข้างในได้ด้วย (จะเห็นเฉพาะในฟังก์ชันนี้)
+
+    now = datetime.now()  # ดึงเวลาปัจจุบัน
+    timestamp = now.strftime("%Y-%m-%d %H:%M")  # แปลงให้อยู่ในรูปแบบสวยๆ
+
+    with open("health_log.txt", "a", encoding="utf-8") as file:
+        file.write(f"[{timestamp}] Name: {name}, Weight: {weight}, Height: {height}, BMI: {bmi:.2f}\n")
+    
     print("✅ บันทึกข้อมูลเรียบร้อยแล้ว!")
 
 def read_health_log():
