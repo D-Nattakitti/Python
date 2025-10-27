@@ -8,3 +8,4 @@ for i in range(5):
 print("\n=== รายชื่อผลไม้ทั้งหมด ===")
 for f in fruits:
     print(f"- {f}")
+
