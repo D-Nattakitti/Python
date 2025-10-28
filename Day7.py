@@ -1,11 +1,19 @@
-# โปรแกรมเก็บชื่อผลไม้ 5 ชนิด แล้วแสดงผลทั้งหมด
+# โปรแกรมเก็บชื่อผลไม้ จนกว่าผู้ใช้จะพิมพ์ end
 fruits = []  # สร้าง list ว่างไว้เก็บชื่อผลไม้
 
-for i in range(5):
-    fruit = input(f"กรอกชื่อผลไม้ชนิดที่ {i+1}: ")
-    fruits.append(fruit)  # เพิ่มชื่อผลไม้ลงใน list
+print("พิมพ์ชื่อผลไม้ (พิมพ์ end เพื่อจบ)")
 
-print("\n=== รายชื่อผลไม้ทั้งหมด ===")
-for f in fruits:
-    print(f"- {f}")
+while True:
+    fruit_name = input("ชื่อผลไม้: ")
+    if fruit_name.lower() == 'end':
+        break
+    fruits.append(fruit_name)
 
+total_fruits = len(fruits)
+name_fruits = sorted(fruits)
+
+print(f"\nคุณกรอกผลไม้ทั้งหมด {total_fruits} ชนิด:")
+print(fruits)
+
+print("\nผลไม้เรียงตามตัวอักษร:")
+print(name_fruits)
