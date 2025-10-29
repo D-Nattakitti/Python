@@ -35,4 +35,17 @@ for key, value in person.items():
     print(f"{key}: {value}")
 
 <!-- *************************** Set คือ “กล่องข้อมูลที่ไม่มีซ้ำ”  ******************************* -->
+ตัวอย่าง
+colors = {"red", "green", "blue", "red"}
+print(colors)  # {'red', 'green', 'blue'}
 
+จุดสำคัญของ set 
+    ข้อมูลจะไม่ซ้ำโดยอัตโนมัติ
+
+ใช้ในการเปรียบเทียบได้ เช่น:
+set_a = {"apple", "banana", "orange"}
+set_b = {"banana", "kiwi", "orange"}
+
+print(set_a | set_b)   # รวมกัน (union)
+print(set_a & set_b)   # ค่าที่ซ้ำกัน (intersection)
+print(set_a - set_b)   # ค่าที่มีใน a แต่ไม่มีใน b
