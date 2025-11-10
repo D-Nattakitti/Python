@@ -1,1 +1,1 @@
-Name: Dome, Wegiht: 79.8, Height: 166.0, BMI: 28.96Name: Dome, Wegiht: 80.0, Height: 166.0, BMI: 29.03Name: D, Wegiht: 12.0, Height: 150.0, BMI: 5.33Name: d, Wegiht: 1.0, Height: 1.0, BMI: 10000.00Name: 11, Wegiht: 25.0, Height: 100.0, BMI: 25.00
+Name: Dome, Wegiht: 79.8, Height: 166.0, BMI: 28.96Name: Dome, Wegiht: 80.0, Height: 166.0, BMI: 29.03Name: D, Wegiht: 12.0, Height: 150.0, BMI: 5.33Name: d, Wegiht: 1.0, Height: 1.0, BMI: 10000.00Name: 11, Wegiht: 25.0, Height: 100.0, BMI: 25.00[2025-11-10 19:51] Name: Dome, Weight: 79.0, Height: 166.0, BMI: 28.67
